@@ -65,6 +65,9 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
             <a href="#services" onClick={handleLinkClick} className="flex items-center gap-2 text-white hover:text-indigo-400">
               <FaBriefcase /> Services
             </a>
+            <a href="#portfolio" onClick={handleLinkClick} className="flex items-center gap-2 text-white hover:text-indigo-400">
+              <FaBriefcase /> Portfolio
+            </a>
             <a href="#contact" onClick={handleLinkClick} className="flex items-center gap-2 text-white hover:text-cyan-400">
               <FaEnvelope /> Contact
             </a>

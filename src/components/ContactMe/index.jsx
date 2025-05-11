@@ -55,23 +55,23 @@ const ContactSection = () => {
         </div>
 
         {/* Right Contact Form */}
-        <div className="bg-[#1f1f1f] rounded-xl p-8 flex-1 shadow-xl w-full max-w-xl mx-auto">
+        <div className="bg-[#2a033e] rounded-xl p-8 flex-1 shadow-xl w-full max-w-xl mx-auto">
           <h2 className="text-2xl font-bold mb-6 text-center text-white">Contact Us</h2>
           <form className="space-y-4">
             <input
               type="text"
               placeholder="Enter your Name"
-              className="w-full p-3 rounded-md bg-[#2a2a2a] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              className="w-full p-3 rounded-md bg-[#4a3703] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500"
             />
             <input
               type="email"
               placeholder="Enter a valid email address"
-              className="w-full p-3 rounded-md bg-[#2a2a2a] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              className="w-full p-3 rounded-md bg-[#4a3703] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500"
             />
             <textarea
               rows="4"
               placeholder="Your Message"
-              className="w-full p-3 rounded-md bg-[#2a2a2a] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              className="w-full p-3 rounded-md bg-[#4a3703] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500"
             />
             <button
               type="submit"

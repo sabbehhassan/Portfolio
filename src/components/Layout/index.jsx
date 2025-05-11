@@ -6,6 +6,7 @@ import About from "../AboutSection";
 import Services from "../ServicesSection";
 import Skills from "../SkillsSection";
 import Contact from "../ContactMe";
+import PortfolioSection from "../PortfolioSection";
 
 const Layout = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,6 +25,7 @@ const Layout = () => {
         <section id="about"><About /></section>
         <section id="skills"><Skills /></section>
         <section id="services"><Services /></section>
+        <section id="portfolio"><PortfolioSection /></section>
         <section id="contact"><Contact /></section>
       </main>
     </div>
