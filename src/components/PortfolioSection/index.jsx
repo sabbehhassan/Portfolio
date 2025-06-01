@@ -3,9 +3,15 @@ import img1 from "../../assets/weatherApp/img1.png";
 import img2 from "../../assets/weatherApp/img2.png";
 import img3 from "../../assets/weatherApp/img3.png";
 import img4 from "../../assets/weatherApp/img4.png";
+import NFT1 from "../../assets/NFTHunter/nft1.png"
+import NFT2 from "../../assets/NFTHunter/nft2.png"
+import NFT3 from "../../assets/NFTHunter/nft3.png"
+import NFT4 from "../../assets/NFTHunter/nft4.png"
+import NFT5 from "../../assets/NFTHunter/nft5.png"
 
 // Images arrays
 const weatherAppImages = [img1, img2, img3, img4];
+const NFTIMG = [ NFT1, NFT2, NFT3, NFT4, NFT5];
 
 const projects = [
   {
@@ -23,11 +29,10 @@ const projects = [
     githubLink: "https://github.com/yourusername/mern-contact-app",
   },
   {
-    title: "NFT Showcase",
+    title: "NFT Hunter",
     description: "NFT card carousel built with React and Tailwind CSS with a slideshow.",
-    images: weatherAppImages,
-    demoLink: "https://your-live-link.com/nft-showcase",
-    githubLink: "https://github.com/yourusername/nft-showcase",
+    images: NFTIMG,
+    githubLink: "https://github.com/sabbehhassan/Web-3-NFT-Market",
   },
   {
     title: "Task Manager App",
