@@ -2,7 +2,7 @@ import React from "react";
 import {
   FaLinkedinIn,
   FaWhatsapp,
-  FaTwitter,
+  FaGithub,
   FaBars,
   FaTimes,
   FaHome,
@@ -46,7 +46,7 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
                 <FaWhatsapp />
               </a>
               <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-cyan-400">
-                <FaTwitter />
+                <FaGithub />
               </a>
             </div>
           </div>
