@@ -51,7 +51,7 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
                 href="https://wa.me/923257376637?text=Hello%2C%20I%20want%20more%20info."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-green-500"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-green-600"
               >
                 <FaWhatsapp />
               </a>
