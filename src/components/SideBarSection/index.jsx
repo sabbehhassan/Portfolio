@@ -45,7 +45,7 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
               <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-green-500">
                 <FaWhatsapp />
               </a>
-              <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-cyan-400">
+              <a href="https://github.com/sabbehhassan" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-cyan-400">
                 <FaGithub />
               </a>
             </div>
