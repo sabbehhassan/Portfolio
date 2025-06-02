@@ -35,17 +35,31 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
               alt="Profile"
               className="w-24 h-24 rounded-full object-cover border-4 border-amber-600 mb-4"
             />
-            <h2 className="text-center text-2xl font-bold mt-4">Sabbeh Hassan</h2>
+            <h2 className="text-center text-2xl font-bold mt-4">
+              Sabbeh Hassan
+            </h2>
 
             {/* Social Icons */}
             <div className="flex gap-3 mt-8">
-              <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-blue-800">
+              <a
+                href="#"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-blue-800"
+              >
                 <FaLinkedinIn />
               </a>
-              <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-green-500">
+              <a
+                href="https://wa.me/923257376637?text=Hello%2C%20I%20want%20more%20info."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-green-500"
+              >
                 <FaWhatsapp />
               </a>
-              <a href="https://github.com/sabbehhassan" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-cyan-400">
+
+              <a
+                href="https://github.com/sabbehhassan"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-cyan-400"
+              >
                 <FaGithub />
               </a>
             </div>
@@ -53,22 +67,46 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
 
           {/* Navigation */}
           <nav className="mt-6 flex flex-col gap-6 text-xl font-bold">
-            <a href="#hero" onClick={handleLinkClick} className="flex items-center gap-2 text-white hover:text-amber-400">
+            <a
+              href="#hero"
+              onClick={handleLinkClick}
+              className="flex items-center gap-2 text-white hover:text-amber-400"
+            >
               <FaHome /> Home
             </a>
-            <a href="#about" onClick={handleLinkClick} className="flex items-center gap-2 text-white hover:text-purple-400">
+            <a
+              href="#about"
+              onClick={handleLinkClick}
+              className="flex items-center gap-2 text-white hover:text-purple-400"
+            >
               <FaUser /> About
             </a>
-            <a href="#skills" onClick={handleLinkClick} className="flex items-center gap-2 text-white hover:text-green-400">
+            <a
+              href="#skills"
+              onClick={handleLinkClick}
+              className="flex items-center gap-2 text-white hover:text-green-400"
+            >
               <FaFileAlt /> Skills
             </a>
-            <a href="#services" onClick={handleLinkClick} className="flex items-center gap-2 text-white hover:text-indigo-400">
+            <a
+              href="#services"
+              onClick={handleLinkClick}
+              className="flex items-center gap-2 text-white hover:text-indigo-400"
+            >
               <FaBriefcase /> Services
             </a>
-            <a href="#portfolio" onClick={handleLinkClick} className="flex items-center gap-2 text-white hover:text-indigo-400">
+            <a
+              href="#portfolio"
+              onClick={handleLinkClick}
+              className="flex items-center gap-2 text-white hover:text-indigo-400"
+            >
               <FaBriefcase /> Portfolio
             </a>
-            <a href="#contact" onClick={handleLinkClick} className="flex items-center gap-2 text-white hover:text-cyan-400">
+            <a
+              href="#contact"
+              onClick={handleLinkClick}
+              className="flex items-center gap-2 text-white hover:text-cyan-400"
+            >
               <FaEnvelope /> Contact
             </a>
           </nav>
