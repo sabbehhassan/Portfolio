@@ -10,7 +10,7 @@ import NFT4 from "../../assets/NFTHunter/nft4.png"
 import NFT5 from "../../assets/NFTHunter/nft5.png"
 
 // Images arrays
-const weatherAppImages = [img1, img2, img3, img4];
+const weatherAppImages = [img4, img2, img3, img1];
 const NFTIMG = [ NFT1, NFT2, NFT3, NFT4, NFT5];
 
 const projects = [
