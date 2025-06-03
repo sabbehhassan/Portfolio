@@ -1,7 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGithub } from "react-icons/fa";
 
 const ContactSection = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_igxyh8m",    
+      "template_7be0wyj",   
+      form.current,
+      "Va0cz4eIGGfdZ5Ibt"      
+    )
+    .then(
+      () => {
+        alert("Message sent successfully! ✅");
+        form.current.reset();
+      },
+      (error) => {
+        alert("Failed to send message ❌");
+        console.error(error.text);
+      }
+    );
+  };
+
   const cardData = [
     {
       icon: <FaMapMarkerAlt size={24} />,
@@ -19,7 +43,6 @@ const ContactSection = () => {
       icon: <FaGithub size={24} />,
       title: "GitHub",
       line1: "github.com/sabbehhassan",
-      line2: "",
     },
     {
       icon: <FaEnvelope size={24} />,
@@ -53,21 +76,27 @@ const ContactSection = () => {
         {/* Contact Form */}
         <div className="flex-1 bg-[#1e293b] bg-opacity-95 rounded-xl p-8 shadow-xl max-w-xl w-full mx-auto">
           <h2 className="text-2xl font-bold mb-6 text-center">Contact Us</h2>
-          <form className="space-y-5">
+          <form ref={form} onSubmit={sendEmail} className="space-y-5">
             <input
               type="text"
+              name="user_name"
               placeholder="Your Name"
               className="w-full p-3 rounded-md bg-[#334155] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              required
             />
             <input
               type="email"
+              name="email"
               placeholder="Your Email"
               className="w-full p-3 rounded-md bg-[#334155] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              required
             />
             <textarea
+              name="message"
               rows="4"
               placeholder="Your Message"
               className="w-full p-3 rounded-md bg-[#334155] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              required
             />
             <button
               type="submit"
