@@ -4,80 +4,76 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGithub } from "react-icons/fa
 const ContactSection = () => {
   const cardData = [
     {
-      icon: <FaMapMarkerAlt size={32} />,
-      title: "OUR MAIN OFFICE",
+      icon: <FaMapMarkerAlt size={24} />,
+      title: "Our Office",
       line1: "SoHo 94 Broadway St",
       line2: "New York, NY 1001",
-      bg: "bg-cyan-500",
     },
     {
-      icon: <FaPhoneAlt size={32} />,
-      title: "PHONE NUMBER",
-      line1: "234-9876-5400",
-      line2: "888-0123-4567 (Toll Free)",
-      bg: "bg-indigo-500",
+      icon: <FaPhoneAlt size={24} />,
+      title: "Call Us",
+      line1: "+92 325-7376-637",
+      line2: "+92 317-1556-267",
     },
     {
-      icon: <FaGithub size={32} />,
-      title: "GITHUB",
-      line1: "Explore my code",
-      line2: "github.com/your-username", // Replace with actual username
-      bg: "bg-pink-500",
-    },
-    {
-      icon: <FaEnvelope size={32} />,
-      title: "EMAIL",
-      line1: "hello@theme.com",
+      icon: <FaGithub size={24} />,
+      title: "GitHub",
+      line1: "github.com/sabbehhassan",
       line2: "",
-      bg: "bg-emerald-500",
+    },
+    {
+      icon: <FaEnvelope size={24} />,
+      title: "Email",
+      line1: "hassansubbeh2446@gmail.com",
     },
   ];
 
   return (
-    <section className="bg-[#0f172a] text-white py-8 px-4 md:px-16 md:h-160">
-      <div className="flex flex-col lg:flex-row justify-between gap-8 max-w-7xl mx-auto">
-        
-        {/* Left Info Cards */}
+    <section className="bg-[#0f172a] text-white py-16 px-6 md:px-16">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10">
+        {/* Info Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-1">
           {cardData.map((item, index) => (
             <div
               key={index}
-              className={`rounded-xl p-6 shadow-lg transition-transform duration-300 ${item.bg} hover:scale-105 active:scale-95`}
+              className="bg-[#1e293b] bg-opacity-90 rounded-xl p-6 shadow-lg hover:shadow-cyan-500/30 transition-transform hover:scale-105"
             >
-              <div className="flex flex-col items-center justify-center text-center space-y-2">
-                <div className="text-white">{item.icon}</div>
+              <div className="flex flex-col items-center text-center space-y-3">
+                <div className="bg-cyan-500 p-3 rounded-full text-white">
+                  {item.icon}
+                </div>
                 <h3 className="text-lg font-semibold">{item.title}</h3>
-                <p className="text-sm">{item.line1}</p>
-                {item.line2 && <p className="text-sm">{item.line2}</p>}
+                <p className="text-sm text-gray-300">{item.line1}</p>
+                {item.line2 && <p className="text-sm text-gray-400">{item.line2}</p>}
               </div>
             </div>
           ))}
         </div>
 
-        {/* Right Contact Form */}
-        <div className="bg-[#2a033e] rounded-xl p-8 flex-1 shadow-xl w-full max-w-xl mx-auto">
-          <h2 className="text-2xl font-bold mb-6 text-center text-white">Contact Us</h2>
-          <form className="space-y-4">
+        {/* Contact Form */}
+        <div className="flex-1 bg-[#1e293b] bg-opacity-95 rounded-xl p-8 shadow-xl max-w-xl w-full mx-auto">
+          <h2 className="text-2xl font-bold mb-6 text-center">Contact Us</h2>
+          <form className="space-y-5">
             <input
               type="text"
-              placeholder="Enter your Name"
-              className="w-full p-3 rounded-md bg-[#4a3703] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              placeholder="Your Name"
+              className="w-full p-3 rounded-md bg-[#334155] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500"
             />
             <input
               type="email"
-              placeholder="Enter a valid email address"
-              className="w-full p-3 rounded-md bg-[#4a3703] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              placeholder="Your Email"
+              className="w-full p-3 rounded-md bg-[#334155] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500"
             />
             <textarea
               rows="4"
               placeholder="Your Message"
-              className="w-full p-3 rounded-md bg-[#4a3703] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              className="w-full p-3 rounded-md bg-[#334155] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500"
             />
             <button
               type="submit"
-              className="bg-cyan-500 text-white font-bold py-2 px-6 rounded-md hover:bg-cyan-600 transition"
+              className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 rounded-md transition"
             >
-              SUBMIT
+              Send Message
             </button>
           </form>
         </div>
