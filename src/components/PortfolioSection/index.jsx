@@ -3,15 +3,24 @@ import img1 from "../../assets/weatherApp/img1.png";
 import img2 from "../../assets/weatherApp/img2.png";
 import img3 from "../../assets/weatherApp/img3.png";
 import img4 from "../../assets/weatherApp/img4.png";
-import NFT1 from "../../assets/NFTHunter/nft1.png"
-import NFT2 from "../../assets/NFTHunter/nft2.png"
-import NFT3 from "../../assets/NFTHunter/nft3.png"
-import NFT4 from "../../assets/NFTHunter/nft4.png"
-import NFT5 from "../../assets/NFTHunter/nft5.png"
-
+import NFT1 from "../../assets/NFTHunter/nft1.png";
+import NFT2 from "../../assets/NFTHunter/nft2.png";
+import NFT3 from "../../assets/NFTHunter/nft3.png";
+import NFT4 from "../../assets/NFTHunter/nft4.png";
+import NFT5 from "../../assets/NFTHunter/nft5.png";
+import YN1 from "../../assets/ygeainImg/img.png";
+import YN2 from "../../assets/ygeainImg/img1.png";
+import YN3 from "../../assets/ygeainImg/img2.png";
+import YN4 from "../../assets/ygeainImg/img3.png";
+import YN5 from "../../assets/ygeainImg/img4.png";
+import YN6 from "../../assets/ygeainImg/img5.png";
+import YN7 from "../../assets/ygeainImg/img6.png";
+import YN8 from "../../assets/ygeainImg/img7.png";
+import YN9 from "../../assets/ygeainImg/img8.png";
 // Images arrays
 const weatherAppImages = [img4, img2, img3, img1];
 const NFTIMG = [ NFT1, NFT2, NFT3, NFT4, NFT5];
+const YNews = [ YN1, YN2, YN3, YN4, YN5, YN6, YN7, YN8, YN9]
 
 const projects = [
   {
@@ -22,9 +31,9 @@ const projects = [
     githubLink: "https://github.com/yourusername/weather-app",
   },
   {
-    title: "MERN Contact App",
+    title: "YGEIAN-NEWS",
     description: "A full-stack contact manager app with dynamic slideshow images.",
-    images: weatherAppImages,
+    images: YNews,
     demoLink: "https://your-live-link.com/contact-app",
     githubLink: "https://github.com/yourusername/mern-contact-app",
   },
