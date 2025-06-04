@@ -8,7 +8,7 @@ const Hero = () => {
     >
       <div className="absolute inset-0 ">
         <img
-          src="src/assets/bg.avif"
+          src="/public/assets/bg.avif"
           alt=""
           className="w-full h-screen object-cover"
         />
