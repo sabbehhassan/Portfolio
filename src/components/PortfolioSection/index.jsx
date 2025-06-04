@@ -45,6 +45,16 @@ const PortfolioSection = () => {
             </div>
           ))}
         </div>
+        <div className="mt-16 flex justify-center">
+          <a
+            href="https://github.com/sabbehhassan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-600 hover:to-cyan-600 px-6 py-2 rounded-md text-sm font-medium transition duration-300 text-white"
+          >
+            🚀 GitHub Link
+          </a>
+        </div>
       </div>
     </section>
   );

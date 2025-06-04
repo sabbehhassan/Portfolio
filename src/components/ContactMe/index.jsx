@@ -1,6 +1,11 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGithub } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaGithub,
+} from "react-icons/fa";
 
 const ContactSection = () => {
   const form = useRef();
@@ -8,22 +13,23 @@ const ContactSection = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_igxyh8m",    
-      "template_7be0wyj",   
-      form.current,
-      "Va0cz4eIGGfdZ5Ibt"      
-    )
-    .then(
-      () => {
-        alert("Message sent successfully! ✅");
-        form.current.reset();
-      },
-      (error) => {
-        alert("Failed to send message ❌");
-        console.error(error.text);
-      }
-    );
+    emailjs
+      .sendForm(
+        "service_igxyh8m",
+        "template_7be0wyj",
+        form.current,
+        "Va0cz4eIGGfdZ5Ibt"
+      )
+      .then(
+        () => {
+          alert("Message sent successfully! ✅");
+          form.current.reset();
+        },
+        (error) => {
+          alert("Failed to send message ❌");
+          console.error(error.text);
+        }
+      );
   };
 
   const cardData = [
@@ -52,7 +58,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className="bg-[#0f172a] text-white py-16 px-6 md:px-16">
+    <section className="bg-[#0f172a] text-white py-16 px-6 md:px-16 md:mt-6 md:mb-16">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10">
         {/* Info Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-1">
@@ -67,7 +73,9 @@ const ContactSection = () => {
                 </div>
                 <h3 className="text-lg font-semibold">{item.title}</h3>
                 <p className="text-sm text-gray-300">{item.line1}</p>
-                {item.line2 && <p className="text-sm text-gray-400">{item.line2}</p>}
+                {item.line2 && (
+                  <p className="text-sm text-gray-400">{item.line2}</p>
+                )}
               </div>
             </div>
           ))}
