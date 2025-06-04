@@ -5,12 +5,18 @@ const About = () => {
     <section id="about" className="bg-[#0f172a] py-18 px-6 md:px-20">
       <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
         {/* Profile Image - Centered Top */}
-        <div className="mt-10 w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg border-4 border-amber-600 mb-6">
-          <img
-            src="/src/assets/white.jpg"
-            alt="Sabbeh Hassan"
-            className="w-full h-full object-cover"
-          />
+        <div className="relative mt-10 mb-6 w-48 h-48 md:w-64 md:h-64">
+          {/* Spinning colorful ring (outer, slightly bigger) */}
+          <div className="absolute -inset-2 md:-inset-3 rounded-full animate-spin z-0 bg-transparent border-4 border-transparent border-t-amber-400 border-r-cyan-400 border-b-pink-500 border-l-purple-500"></div>
+
+          {/* Profile Image (inner circle, above the ring) */}
+          <div className="relative w-full h-full rounded-full overflow-hidden shadow-lg z-10">
+            <img
+              src="/src/assets/white.jpg"
+              alt="Sabbeh Hassan"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
         {/* About Content */}

@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import projects from "../../data/project";
 const PortfolioSection = () => {
-  const [currentIndexes, setCurrentIndexes] = useState(
-    projects.map(() => 0)
-  );
+  const [currentIndexes, setCurrentIndexes] = useState(projects.map(() => 0));
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -30,10 +28,12 @@ const PortfolioSection = () => {
               <img
                 src={project.images[currentIndexes[index]]}
                 alt={project.title}
-                className="w-full h-48 object-cover rounded-md mb-4"
+                className="w-full h-48 object-contain rounded-md mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-gray-300 text-sm mb-4">{project.description}</p>
+              <p className="text-gray-300 text-sm mb-4">
+                {project.description}
+              </p>
               <a
                 href={project.githubLink}
                 target="_blank"
