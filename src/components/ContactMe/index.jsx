@@ -36,8 +36,7 @@ const ContactSection = () => {
     {
       icon: <FaMapMarkerAlt size={24} />,
       title: "Our Office",
-      line1: "SoHo 94 Broadway St",
-      line2: "New York, NY 1001",
+      line1: "Sher ahmed plaza office# 02, 1st Floor 11-A affandi colony RWP",
     },
     {
       icon: <FaPhoneAlt size={24} />,
