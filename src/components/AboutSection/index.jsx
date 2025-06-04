@@ -7,7 +7,7 @@ const About = () => {
         {/* Profile Image - Centered Top */}
         <div className="relative mt-10 mb-6 w-48 h-48 md:w-64 md:h-64">
           {/* Spinning colorful ring (outer, slightly bigger) */}
-          <div className="absolute -inset-2 md:-inset-3 rounded-full animate-spin z-0 bg-transparent border-4 border-transparent border-t-amber-400 border-r-cyan-400 border-b-pink-500 border-l-purple-500"></div>
+          <div className="absolute -inset-2 md:-inset-3 rounded-full animate-spin  z-0 bg-transparent border-4 border-transparent border-t-amber-400 border-r-cyan-400 border-b-pink-500 border-l-purple-500"></div>
 
           {/* Profile Image (inner circle, above the ring) */}
           <div className="relative w-full h-full rounded-full overflow-hidden shadow-lg z-10">
