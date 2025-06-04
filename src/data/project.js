@@ -2,7 +2,7 @@ const projects = [
   {
     title: "FullStackWeatherApp",
     description:
-      "A full-stack weather app with live weather data and a dynamic slideshow.",
+      "A full-stack weather application built using the MERN stack with Vite and Tailwind CSS 4. It provides real-time weather updates with a dynamic and responsive UI.",
     images: [
       "/assets/weatherApp/img4.png",
       "/assets/weatherApp/img2.png",
@@ -16,7 +16,7 @@ const projects = [
   {
     title: "YGEIAN-NEWS",
     description:
-      "A full-stack contact manager app with dynamic slideshow images.",
+      "A modern web application developed with React (Vite) and Tailwind CSS, designed to provide users with the latest articles and updates related to diseases, medicines, and healthcare news.",
     images: [
       "/assets/ygeainImg/img.png",
       "/assets/ygeainImg/img1.png",
@@ -35,7 +35,7 @@ const projects = [
   {
     title: "NFT Hunter",
     description:
-      "NFT card carousel built with React and Tailwind CSS with a slideshow.",
+      "A Web3-based NFT explorer platform built with React and Tailwind CSS. It features an elegant NFT card carousel to showcase trending NFTs in a sleek, responsive layout.",
     images: [
       "/assets/NFTHunter/nft1.png",
       "/assets/NFTHunter/nft2.png",
