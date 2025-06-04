@@ -37,7 +37,7 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
               {/* Image inside a slightly smaller container */}
               <div className="relative w-[88%] h-[88%] top-[6%] left-[6%] rounded-full overflow-hidden shadow-lg z-10">
                 <img
-                  src="/public/assets/white.jpg"
+                  src="/assets/white.jpg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />

@@ -12,7 +12,7 @@ const About = () => {
           {/* Profile Image (inner circle, above the ring) */}
           <div className="relative w-full h-full rounded-full overflow-hidden shadow-lg z-10">
             <img
-              src="/public/assets/white.jpg"
+              src="/assets/white.jpg"
               alt="Sabbeh Hassan"
               className="w-full h-full object-cover"
             />
