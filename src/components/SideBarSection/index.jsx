@@ -30,11 +30,20 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
         <div className="p-5 mt-2">
           {/* Profile */}
           <div className="flex flex-col items-center">
-            <img
-              src="/src/assets/white.jpg"
-              alt="Profile"
-              className="w-24 h-24 rounded-full object-cover border-4 border-amber-600 mb-4"
-            />
+            <div className="relative w-28 h-28 mb-4">
+              {/* Spinning Border Ring */}
+              <div className="absolute inset-0 animate-spin rounded-full border-[2px] border-transparent border-t-amber-400 border-r-cyan-400 border-b-pink-500 border-l-purple-500 z-0"></div>
+
+              {/* Image inside a slightly smaller container */}
+              <div className="relative w-[88%] h-[88%] top-[6%] left-[6%] rounded-full overflow-hidden shadow-lg z-10">
+                <img
+                  src="/src/assets/white.jpg"
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
             <h2 className="text-center text-2xl font-bold mt-4">
               Sabbeh Hassan
             </h2>
